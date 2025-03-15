@@ -1,11 +1,13 @@
-from selene import browser, have, command, by
+from selene import browser, have, by, command
+
 from model.resourse import path
 
 
 class RegistrationPage:
 
     def open(self):
-        browser.open('/automation-practice-form')
+        browser.open('https://demoqa.com/automation-practice-form')
+        print(f"Открываем страницу: {browser.config.base_url}/automation-practice-form")
 
     def fill_first_name(self,value):
         browser.element('#firstName').type(value)
