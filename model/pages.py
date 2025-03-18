@@ -7,7 +7,7 @@ class RegistrationPage:
     def open(self):
         browser.open('/automation-practice-form')
 
-    def remove_banners(self):
+    def remove_banner(self):
         browser.driver.execute_script("$('#fixedban').remove()")
         browser.driver.execute_script("$('footer').remove()")
 
